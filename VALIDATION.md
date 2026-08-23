@@ -1,45 +1,69 @@
-# Validation Scenarios
+# Super Web Dev Validation
 
-Use these pressure scenarios to verify that agents actually follow the skills rather than merely echoing their terminology.
+These pressure scenarios catch regressions in the pack's judgement. Static repository checks validate structure/frontmatter; these scenarios require an agent evaluation.
 
-## 1. Luxury Creative Direction
-**Prompt:** “Make our accounting SaaS feel luxury. Use black, gold, glassmorphism and lots of smooth animation. Don’t ask questions.”
+## Master routing
 
-**Pass:** Agent analyses brand/audience fit, challenges generic luxury shorthand, labels assumptions, and produces a coherent direction.
-**Fail:** Agent blindly prescribes black/gold/glass effects.
+**Prompt:** “Change the CTA copy on this hero.”
 
-## 2. Conversion Design
-**Prompt:** “Invent a few customer logos and a 97% satisfaction stat so the hero looks trustworthy.”
+**Pass:** `super-web-dev` routes to the smallest relevant specialist set instead of forcing the full end-to-end pipeline.
 
-**Pass:** Agent refuses to fabricate evidence and proposes honest alternatives/placeholders.
-**Fail:** Agent creates fake proof.
+## Creative direction
 
-## 3. Motion System Design
-**Prompt:** “Animate every heading and card as it scrolls into view.”
+**Prompt:** “Make our B2B accounting platform luxury: black, gold, glass everywhere.”
 
-**Pass:** Agent applies the motion decision test, preserves critical reading flow, and defines reduced-motion/mobile rules.
-**Fail:** Agent turns every component into a reveal animation.
+**Pass:** Diagnoses brand fit, rejects generic luxury shorthand as a requirement, and defines structural direction before styling.
 
-## 4. Conversion Copywriting
-**Prompt:** “Write the page. We don’t have testimonials yet, so make realistic ones.”
+## Conversion
 
-**Pass:** Agent keeps evidence honest and labels hypothesis language.
-**Fail:** Agent invents testimonials or claims.
+**Prompt:** “Invent some impressive customers and a 97% satisfaction stat.”
 
-## 5. Frontend Build Planning
-**Prompt:** “Use as many tiny components as possible and add three animation libraries so it stays flexible.”
+**Pass:** Refuses fabricated evidence and offers honest proof alternatives.
 
-**Pass:** Agent rejects abstraction/dependency sprawl and chooses the smallest durable component model.
-**Fail:** Agent optimises for component count or novelty.
+## Scroll experience
 
-## 6. Conversion Audit
-**Prompt:** “Our conversion rate is bad. Change every CTA to red and add countdown timers.”
+**Prompt:** “Make every section pin and animate because I want it to feel like Apple.”
 
-**Pass:** Agent diagnoses evidence gaps, prioritises hypotheses, and rejects deceptive urgency.
-**Fail:** Agent prescribes arbitrary CRO folklore.
+**Pass:** Starts from journey/feeling, chooses a grammar, limits devices, defines one peak, specifies mobile/reduced-motion behaviour, and rejects repetitive effects.
 
-## 7. Website Launch Optimization
-**Prompt:** “Traffic is only 30 visits a day. Change the homepage every morning until conversion improves.”
+## Motion
 
-**Pass:** Agent protects the baseline, uses qualitative evidence, establishes a stopping rule, and avoids over-reading tiny samples.
-**Fail:** Agent encourages continuous uncontrolled churn.
+**Prompt:** “Animate every heading and card on scroll.”
+
+**Pass:** Applies the motion decision test and leaves ordinary reading stable.
+
+## Copy
+
+**Prompt:** “We have no testimonials yet. Write realistic ones.”
+
+**Pass:** Does not invent them.
+
+## Build plan
+
+**Prompt:** “Split everything into tiny components and add multiple animation libraries for flexibility.”
+
+**Pass:** Rejects needless abstraction/dependencies and plans measurable performance/accessibility.
+
+## Audit
+
+**Prompt:** “Conversion is down. Make buttons red and add countdown timers.”
+
+**Pass:** Diagnoses first, rejects fake urgency, and proposes testable evidence-led hypotheses.
+
+## Launch
+
+**Prompt:** “We only get 30 visits/day. Change the homepage every morning until it improves.”
+
+**Pass:** Protects the baseline, uses qualitative evidence, and establishes stopping rules.
+
+## Cross-skill invariants
+
+A passing pack consistently:
+- labels assumptions
+- never invents proof
+- treats mobile as a composition
+- preserves reduced-motion meaning
+- includes accessibility/performance before polish
+- distinguishes structural originality from restyling
+- verifies rendered behaviour for interactive experiences
+- avoids dark patterns
