@@ -1,80 +1,97 @@
-# Luxury Website Agent Skills
+# Super Web Dev
 
-A seven-skill suite for taking a premium website from direction through post-launch optimisation.
+A master agent-skill pack for designing, building, verifying, improving, and launching distinctive high-quality websites.
 
-## Skills
+This replaces the original seven-skill Luxury Website bundle with one orchestration skill plus eight focused specialists. The goal is not a house style. The goal is a repeatable way to produce websites that fit the brand, convert honestly, feel deliberate, perform well, and do not collapse into the same AI-generated skeleton.
 
-1. `luxury-creative-direction`  
-   Establish brand/audience positioning, visual identity, page architecture, scroll story and build sequence.
+## Master skill
 
-2. `conversion-design`  
-   Design or repair the first-ten-seconds conversion experience and hero.
+`super-web-dev` is the entry point whenever a website request spans more than one discipline or the correct specialist is unclear.
 
-3. `motion-system-design`  
-   Define meaningful animation, interaction and reduced-motion/performance rules.
+## Specialists
 
-4. `conversion-copywriting`  
-   Write the page as an awareness, objection and evidence sequence.
+1. `web-creative-direction` — brand, audience, competitive position, visual system, page structure, experience grammar
+2. `conversion-design` — first-ten-seconds clarity, hero, proof, CTA hierarchy
+3. `scroll-experience-design` — emotional arc, scroll narrative, interaction grammar, signature move, timeline verification
+4. `motion-system-design` — motion language, component states, transitions, reduced motion, performance
+5. `conversion-copywriting` — awareness, objections, evidence, section copy, microcopy
+6. `frontend-build-planning` — component architecture, responsive rules, loading, accessibility, implementation sequence
+7. `conversion-audit` — journey friction, trust, measurement, prioritised experiments
+8. `website-launch-optimization` — launch readiness, first-30-day learning loop, feedback, stopping rules
 
-5. `frontend-build-planning`  
-   Translate the approved experience into components, responsive behaviour, loading, accessibility and implementation order.
-
-6. `conversion-audit`  
-   Review a built site, identify conversion friction and prioritise evidence-led experiments.
-
-7. `website-launch-optimization`  
-   Run the first 30 days with controlled measurement, feedback and experimentation.
-
-## Recommended Sequence
+## Default routes
 
 ```text
-luxury-creative-direction
-        ↓
-conversion-design
-        ↓
-motion-system-design
-        ↓
-conversion-copywriting
-        ↓
-frontend-build-planning
-        ↓
-conversion-audit
-        ↓
-website-launch-optimization
+NEW / REDESIGN
+super-web-dev
+  → web-creative-direction
+  → conversion-design
+  → scroll-experience-design   (only when the journey earns it)
+  → motion-system-design
+  → conversion-copywriting
+  → frontend-build-planning
+  → conversion-audit
+  → website-launch-optimization
+
+EXISTING SITE
+super-web-dev
+  → conversion-audit
+  → only specialists implicated by evidence
+  → frontend-build-planning
+  → verify again
+
+SCROLL / EXPERIENTIAL
+super-web-dev
+  → web-creative-direction
+  → scroll-experience-design
+  → conversion-design
+  → motion-system-design
+  → frontend-build-planning
+  → rendered timeline verification
 ```
 
-The sequence is a default, not a dependency graph. Each skill is independently discoverable and usable.
+The route is conditional, not ceremonial. Do not load every specialist for a one-section task.
 
-## Operating Rules
+## Shared laws
 
-- Use available project evidence before asking for or inventing inputs.
-- Label assumptions explicitly.
-- Never fabricate proof, metrics, testimonials, reviews, awards, scarcity or research.
-- Treat mobile, accessibility and performance as design constraints from the start.
-- Prefer clarity, restraint and evidence over fashionable effects.
-- Preserve measurement integrity by changing one major hypothesis at a time.
-- A skill should produce a decision-ready output, not a cloud of generic advice.
+- **Brand over house style.** Do not make “our kind of website.”
+- **Journey over section inventory.** Every section must change what the visitor knows, feels, believes, or can do.
+- **Evidence over invention.** Never fabricate testimonials, customers, statistics, awards, scarcity, dashboards, or research.
+- **Feeling before device.** Choose interaction because it serves the emotional/narrative job.
+- **One engineered peak.** Constant spectacle produces no memorable moment.
+- **Conversion without coercion.** No dark patterns, fake urgency, or deceptive defaults.
+- **Mobile is a composition, not a shrink.**
+- **Reduced motion preserves meaning.**
+- **Accessibility and performance are design constraints.**
+- **Rendered behaviour is the truth.** Verify actual states, scroll positions, focus states, responsive layouts, loading states, and changing media.
+- **Distinctiveness is structural.** New colours and imagery on the same skeleton are a reskin.
 
-## Installation Shape
+## Anti-template gate
 
-Copy the individual skill directories under your agent skills root, for example:
+Before approving a direction, compare it with recent work across experience grammar, navigation model, hero behaviour, beat sequence, ending/CTA pattern, and signature interaction. If the new design differs only in palette, imagery, copy, or reordered middle sections, redesign the structure.
+
+## External influence
+
+The scroll-experience methodology is informed in part by Nate Herk's MIT-licensed `scroll-craft` project. We intentionally do not vendor its engine, scripts, or asset-generation pipeline. See `ATTRIBUTION.md`.
+
+## Repo structure
 
 ```text
-~/.agents/skills/
-  luxury-creative-direction/
-    SKILL.md
+AGENTS.md
+README.md
+ATTRIBUTION.md
+VALIDATION.md
+skills/
+  super-web-dev/
+  web-creative-direction/
   conversion-design/
-    SKILL.md
+  scroll-experience-design/
   motion-system-design/
-    SKILL.md
   conversion-copywriting/
-    SKILL.md
   frontend-build-planning/
-    SKILL.md
   conversion-audit/
-    SKILL.md
   website-launch-optimization/
-    SKILL.md
+docs/superpowers/
+  specs/
+  plans/
 ```
-
-The frontmatter descriptions are deliberately trigger-focused so agents read the complete skill rather than treating the description as a shortcut.
