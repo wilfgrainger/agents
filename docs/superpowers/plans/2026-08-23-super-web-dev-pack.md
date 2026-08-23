@@ -53,9 +53,9 @@
 
 ### Task 5: Static verification
 
-- [ ] Verify exactly nine skill directories exist.
-- [ ] Verify every directory contains `SKILL.md`.
-- [ ] Verify every frontmatter name matches its directory and description starts `Use when`.
-- [ ] Verify README and AGENTS references resolve.
-- [ ] Verify retired `luxury-creative-direction` is absent.
-- [ ] Re-fetch GitHub `main` and confirm the final tree.
+- [x] Verify exactly nine skill directories exist.
+- [x] Verify every directory contains `SKILL.md`.
+- [x] Verify every frontmatter name matches its directory and description starts `Use when`.
+- [x] Verify README and AGENTS references resolve.
+- [x] Verify retired `luxury-creative-direction` is absent.
+- [x] Re-fetch GitHub `main` and confirm the final tree.
